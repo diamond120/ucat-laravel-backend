@@ -42,7 +42,9 @@ class DatabaseSeeder extends Seeder
 
             $package_id = DB::table('packages')->insertGetId([
                 'name' => $package->name,
-                'type' => $package->type
+                'type' => $package->type,
+                'created_at' => now(),
+                'updated_at' => now(),
             ]);
 
             foreach($package->sections as $section) {       
@@ -51,7 +53,9 @@ class DatabaseSeeder extends Seeder
                     'type' => $section_types[$section->type],
                     'time' => $section->time ?? null,
                     'time_sen' => $section->time_sen ?? null,
-                    'package_id' => $package_id
+                    'package_id' => $package_id,
+                    'created_at' => now(),
+                    'updated_at' => now(),
                 ]);
 
                 foreach($section->situations as $situation) {
@@ -59,32 +63,28 @@ class DatabaseSeeder extends Seeder
                         'text' => $situation->text ?? null,
                         'image_url' => $situation->image ?? null,
                         'split' => isset($situation->layout) && $situation->layout == 'side by side',
-                        'section_id' => $section_id
+                        'section_id' => $section_id,
+                        'created_at' => now(),
+                        'updated_at' => now(),
                     ]);
 
                     foreach($situation->questions as $question) {
-                        try {
-                            DB::table('questions')->insert([
-                                'text' => $question->text ?? null,
-                                'image_url' => $question->image ?? null,
-                                'type' => $question_types[$question->type],
-                                'options' => json_encode($question->options),
-                                'option_image_urls' => isset($question->option_images) ? json_encode($question->option_images) : null,
-                                'answer' => json_encode($question->answer),
-                                'explanation' => $question->explanation,
-                                'situation_id' => $situation_id,
-                                'section_id' => $section_id             
-                            ]);
-                        } catch(Exception $e) {
-                            Log::info(json_encode($question));
-                            throw $e;
-                        }
-                        
+                        DB::table('questions')->insert([
+                            'text' => $question->text ?? null,
+                            'image_url' => $question->image ?? null,
+                            'type' => $question_types[$question->type],
+                            'options' => json_encode($question->options),
+                            'option_image_urls' => isset($question->option_images) ? json_encode($question->option_images) : null,
+                            'answer' => json_encode($question->answer),
+                            'explanation' => $question->explanation,
+                            'situation_id' => $situation_id,
+                            'section_id' => $section_id,
+                            'created_at' => now(),
+                            'updated_at' => now(),           
+                        ]);
                     }
-
                 }
-            }          
-            break;
+            }    
         }
     }
 }
