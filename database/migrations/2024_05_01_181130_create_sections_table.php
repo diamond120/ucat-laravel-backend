@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('type'); //VR, DM, QR, AR, SJ
             $table->string('name');
-            $table->integer('time');
-            $table->integer('time_sen');
+            $table->integer('time')->nullable();
+            $table->integer('time_sen')->nullable();
             $table->foreignId('package_id')->constrained();
             $table->timestamps();
         });

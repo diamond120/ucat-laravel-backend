@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('situations', function (Blueprint $table) {
             $table->id();
-            $table->text('text');
-            $table->string('image_url');
+            $table->text('text')->nullable();
+            $table->string('image_url')->nullable();
             $table->boolean('split');
             $table->foreignId('section_id')->constrained();
             $table->timestamps();

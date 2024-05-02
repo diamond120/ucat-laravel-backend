@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
-            $table->text('text');
-            $table->string('image_url');
+            $table->text('text')->nullable();
+            $table->string('image_url')->nullable();
             $table->string('type'); //MC, DD
-            $table->json('options');
-            $table->json('option_image_urls');
+            $table->text('options');
+            $table->text('option_image_urls')->nullable();
             $table->text('answer');
             $table->text('explanation');
             $table->foreignId('situation_id')->constrained();
