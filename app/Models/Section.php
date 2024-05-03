@@ -10,7 +10,10 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Section extends Model
 {
     use HasFactory;
-
+    protected $hidden = [
+        'created_at',
+        'updated_at'
+    ];
     public function package() : BelongsTo
     {
         return $this->belongsTo(Package::class);

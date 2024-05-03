@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SectionController;
 use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
@@ -29,5 +30,7 @@ Route::group(['middleware' => 'api', 'prefix' => 'auth'], function ($router) {
 Route::get('/packages', [PackageController::class, 'list']);
 Route::post('/sessions', [SessionController::class, 'create']);
 Route::get('/sessions/{id}', [SessionController::class, 'get']);
+
+Route::get('/sections/{id}', [SectionController::class, 'get']);
 Route::get('/sessions/{sid}/responses/{qid}', [ResponseController::class, 'read']);
 Route::post('responses', [ResponseController::class, 'write']);

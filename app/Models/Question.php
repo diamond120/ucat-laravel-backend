@@ -12,6 +12,11 @@ class Question extends Model
 
     protected $with = ['situation'];
 
+    protected $hidden = [
+        'created_at',
+        'updated_at'
+    ];
+
     public function situation() : BelongsTo
     {
         return $this->belongsTo(Situation::class);

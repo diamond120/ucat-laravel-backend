@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Package;
 use App\Models\Session;
+use App\Models\Response;
 
 class SessionController extends Controller
 {
@@ -31,16 +32,45 @@ class SessionController extends Controller
         ]);
     }
 
-    public function get($id) {
-        $session = $session = Session::with(['package', 'section', 'question'])->find($id);
+    public function get($sid) {
+        $session = $session = Session::with(['package'])->find($sid);
+        $sections = [];
+        foreach($session->package->sections as $section) {
+            $section_temp = [
+                'id' => $section->id,
+                'questions' => []
+            ];
+            foreach($section->questions as $question) {
+                $response = Response::where(
+                    [
+                        'session_id' => (int)$sid,
+                        'question_id' => (int)$question->id,
+                    ],
+                )->first();
+                
+                $status = 'UnSeen';
+                if($response) {
+                    if($response->flagged) $status = 'Flagged';
+                    if($response->value) $status = 'Completed';
+                    else $status = 'InComplete';            
+                }
+
+                $section_temp['questions'][] = [
+                    'id' => $question->id,
+                    'status' => $status
+                ];
+            }
+
+            $sections[] = $section_temp;
+        }
 
         return response()->json([
             'completed' => $session->completed,
             'started_at' => $session->started_at,
             'finished_at' => $session->finished_at,
-            'package' => $session->package,
-            'section' => $session->section,
-            'question' => $session->question
+            'section_id' => $session->section_id,
+            'question_id' => $session->question_id,
+            'sections' => $sections
         ]);
     }
 }

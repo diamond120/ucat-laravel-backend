@@ -18,6 +18,12 @@ class Response extends Model
         'score'
     ];
 
+    protected $hidden = [
+        'score',
+        'created_at',
+        'updated_at'
+    ];
+
     public function session() : BelongsTo
     {
         return $this->belongsTo(Session::class);
