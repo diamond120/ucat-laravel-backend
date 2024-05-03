@@ -1,6 +1,6 @@
-# Laravel Backend Starter
+# Laravel Backend for UCAT EXAM
 
-> Backend laravel with json web token and Cloudinary
+> Backend laravel with json web token
 
 ## Authors
 
@@ -33,3 +33,4 @@ Give a star if you like this repository
 - setup Cloudinary Environment
 - Run the server locally with `php artisan serve`
 - run database migration with `php artisan migration`
+- run database seed with `php artisan db:seed`
