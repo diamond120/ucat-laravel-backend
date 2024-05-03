@@ -4,12 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Log;
 
 use App\Models\Package;
 use App\Models\Session;
-use App\Models\Section;
 
 class SessionController extends Controller
 {
@@ -31,6 +28,19 @@ class SessionController extends Controller
 
         return response()->json([
             'id' => $session->id
+        ]);
+    }
+
+    public function get($id) {
+        $session = $session = Session::with(['package', 'section', 'question'])->find($id);
+
+        return response()->json([
+            'completed' => $session->completed,
+            'started_at' => $session->started_at,
+            'finished_at' => $session->finished_at,
+            'package' => $session->package,
+            'section' => $session->section,
+            'question' => $session->question
         ]);
     }
 }

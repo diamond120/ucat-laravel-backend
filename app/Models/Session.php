@@ -27,12 +27,12 @@ class Session extends Model
         return $this->belongsTo(Package::class);
     }
 
-    public function current_section() : BelongsTo
+    public function section() : BelongsTo
     {
         return $this->belongsTo(Section::class);
     }
 
-    public function current_question() : BelongsTo
+    public function question() : BelongsTo
     {
         return $this->belongsTo(Question::class);
     }

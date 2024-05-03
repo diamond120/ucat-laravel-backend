@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->foreignId('session_id')->constrained();
             $table->foreignId('question_id')->constrained();
-            $table->string('value');
+            $table->string('value')->nullable();
             $table->boolean('flagged');
-            $table->float('score');
+            $table->float('score')->nullable();
             $table->timestamps();
         });
     }

@@ -10,6 +10,8 @@ class Question extends Model
 {
     use HasFactory;
 
+    protected $with = ['situation'];
+
     public function situation() : BelongsTo
     {
         return $this->belongsTo(Situation::class);

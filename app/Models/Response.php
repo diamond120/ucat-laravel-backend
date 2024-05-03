@@ -10,6 +10,14 @@ class Response extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'session_id', 
+        'question_id',
+        'value',
+        'flagged',
+        'score'
+    ];
+
     public function session() : BelongsTo
     {
         return $this->belongsTo(Session::class);
