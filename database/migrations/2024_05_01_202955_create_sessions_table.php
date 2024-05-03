@@ -16,11 +16,11 @@ return new class extends Migration
             $table->foreignId('package_id')->constrained();
             $table->integer('user_id');
             $table->boolean('completed');
-            $table->double('score');
+            $table->double('score')->nullable();
             $table->foreignId('section_id')->constrained();
             $table->foreignId('question_id')->constrained();
             $table->timestamp('started_at');
-            $table->timestamp('finished_at');
+            $table->timestamp('finished_at')->nullable();
         });
     }
 

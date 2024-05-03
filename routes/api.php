@@ -1,10 +1,10 @@
 <?php
 
+use App\Http\Controllers\SessionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\AccountController;
+use App\Http\Controllers\PackageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,21 +26,5 @@ Route::group(['middleware' => 'api', 'prefix' => 'auth'], function ($router) {
   Route::get('me', [AuthController::class, 'me']);
 });
 
-Route::middleware(['jwt.verify'])->group(function () {
-  Route::get('/users', [UserController::class, 'read']);
-  Route::post('/users', [UserController::class, 'create']);
-  Route::post('/users/{id}', [UserController::class, 'update']);
-  Route::delete('/users/{id}', [UserController::class, 'delete']);
-  Route::get('/user/search', [UserController::class, 'search']);
-  Route::get('/user/paginate', [UserController::class, 'paginate']);
-
-  Route::get('/account', [AccountController::class, 'me']);
-  Route::post('/account', [AccountController::class, 'update']);
-  Route::put('/account/password', [AccountController::class, 'password_change']);
-});
-
-
-
-// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
+Route::get('/packages', [PackageController::class, 'list']);
+Route::post('/sessions', [SessionController::class, 'create']);

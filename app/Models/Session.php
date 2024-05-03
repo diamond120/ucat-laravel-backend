@@ -10,6 +10,18 @@ class Session extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+    protected $fillable = [
+        'package_id', 
+        'user_id', 
+        'completed', 
+        'score', 
+        'section_id', 
+        'question_id',
+        'started_at',
+        'finished_at'
+    ];
+
     public function package() : BelongsTo
     {
         return $this->belongsTo(Package::class);
