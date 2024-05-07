@@ -28,9 +28,10 @@ Route::group(['middleware' => 'api', 'prefix' => 'auth'], function ($router) {
 });
 
 Route::get('/packages', [PackageController::class, 'list']);
-Route::post('/sessions', [SessionController::class, 'create']);
-Route::get('/sessions/{id}', [SessionController::class, 'get']);
 
-Route::get('/sections/{id}', [SectionController::class, 'get']);
-Route::get('/sessions/{sid}/responses/{qid}', [ResponseController::class, 'read']);
-Route::post('responses', [ResponseController::class, 'write']);
+Route::post('/sessions', [SessionController::class, 'create']);
+Route::get('/sessions/{sid}', [SessionController::class, 'get']);
+Route::put('/sessions/{sid}/sections/{nid}', [SessionController::class, 'navigate']);
+
+Route::get('/sessions/{sid}/questions/{qid}', [ResponseController::class, 'read']);
+Route::post('/sessions/{sid}/questions/{qid}', [ResponseController::class, 'write']);

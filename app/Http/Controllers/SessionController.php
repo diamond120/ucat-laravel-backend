@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Models\Package;
 use App\Models\Session;
 use App\Models\Response;
+use App\Models\Section;
 
 class SessionController extends Controller
 {
@@ -21,8 +22,8 @@ class SessionController extends Controller
             'user_id' => $request->user_id,
             'completed' => false,
             'score' => null,
-            'section_id' => $section->id,
-            'question_id' => $question->id,
+            'section_id' => null,
+            'question_id' => null,
             'started_at' => now(),
             'finished_at' => null
         ]);
@@ -38,6 +39,8 @@ class SessionController extends Controller
         foreach($session->package->sections as $section) {
             $section_temp = [
                 'id' => $section->id,
+                'name' => $section->name,
+                'type' => $section->type,
                 'questions' => []
             ];
             foreach($section->questions as $question) {
@@ -56,7 +59,7 @@ class SessionController extends Controller
                 }
 
                 $section_temp['questions'][] = [
-                    'id' => $question->id,
+                    'id' => $question->id, 
                     'status' => $status
                 ];
             }
@@ -65,6 +68,7 @@ class SessionController extends Controller
         }
 
         return response()->json([
+            'package' => $section->package,
             'completed' => $session->completed,
             'started_at' => $session->started_at,
             'finished_at' => $session->finished_at,
@@ -72,5 +76,13 @@ class SessionController extends Controller
             'question_id' => $session->question_id,
             'sections' => $sections
         ]);
+    }
+
+    public function navigate($sid, $nid) {
+        Session::find($sid)->update([
+            'section_id' => $nid,
+            'question_id' => null
+        ]);
+        return response()->json(Section::find($nid));
     }
 }

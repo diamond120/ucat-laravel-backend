@@ -17,8 +17,8 @@ return new class extends Migration
             $table->integer('user_id');
             $table->boolean('completed');
             $table->double('score')->nullable();
-            $table->foreignId('section_id')->constrained();
-            $table->foreignId('question_id')->constrained();
+            $table->foreignId('section_id')->nullable()->constrained();
+            $table->foreignId('question_id')->nullable()->constrained();
             $table->timestamp('started_at');
             $table->timestamp('finished_at')->nullable();
         });
