@@ -62,7 +62,7 @@ class DatabaseSeeder extends Seeder
                     $situation_id = DB::table('situations')->insertGetId([
                         'text' => $situation->text ?? null,
                         'image_url' => $situation->image ?? null,
-                        'split' => isset($situation->layout) && $situation->layout == 'side by side',
+                        'split' => !isset($situation->layout) || $situation->layout == 'side by side',
                         'section_id' => $section_id,
                         'created_at' => now(),
                         'updated_at' => now(),
