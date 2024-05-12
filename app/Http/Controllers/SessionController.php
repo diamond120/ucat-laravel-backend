@@ -52,16 +52,14 @@ class SessionController extends Controller
                     ],
                 )->first();
                 
-                $status = 'UnSeen';
-                if($response) {
-                    if($response->flagged) $status = 'Flagged';
-                    if($response->value) $status = 'Completed';
-                    else $status = 'InComplete';            
-                }
+                $status = $response
+                    ? $response->value ? 'Completed' : 'InComplete'
+                    : 'UnSeen';
 
                 $section_temp['questions'][] = [
                     'id' => $question->id, 
-                    'status' => $status
+                    'status' => $status,
+                    'flagged' => $response->flagged ?? false,
                 ];
             }
 
