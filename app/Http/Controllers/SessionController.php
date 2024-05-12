@@ -41,6 +41,7 @@ class SessionController extends Controller
                 'id' => $section->id,
                 'name' => $section->name,
                 'type' => $section->type,
+                'time' => $section->time,
                 'questions' => []
             ];
             foreach($section->questions as $question) {
