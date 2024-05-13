@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('value')->nullable();
             $table->boolean('flagged');
             $table->float('score')->nullable();
+            $table->integer('duration')->nullable();
             $table->timestamps();
         });
     }
