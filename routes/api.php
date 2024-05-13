@@ -32,6 +32,7 @@ Route::get('/packages', [PackageController::class, 'list']);
 Route::post('/sessions', [SessionController::class, 'create']);
 Route::get('/sessions/{sid}', [SessionController::class, 'get']);
 Route::put('/sessions/{sid}/sections/{nid}', [SessionController::class, 'navigate']);
+Route::put('/sessions/{sid}', [SessionController::class, 'finish']);
 
 Route::get('/sessions/{sid}/questions/{qid}', [ResponseController::class, 'read']);
 Route::post('/sessions/{sid}/questions/{qid}', [ResponseController::class, 'write']);

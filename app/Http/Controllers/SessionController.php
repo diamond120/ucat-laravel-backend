@@ -84,4 +84,14 @@ class SessionController extends Controller
         ]);
         return response()->json(Section::find($nid));
     }
+
+    public function finish($sid) {
+        Session::find($sid)->update([
+            'completed' => true,
+            'finished_at' => now()
+        ]);
+        return response()->json([
+            'id' => $sid
+        ]);
+    }
 }
