@@ -18,6 +18,8 @@ class Session extends Model
         'score', 
         'section_id', 
         'question_id',
+        'first_time',
+        'last_time',
         'started_at',
         'finished_at'
     ];

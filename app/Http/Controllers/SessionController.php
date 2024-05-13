@@ -34,7 +34,7 @@ class SessionController extends Controller
     }
 
     public function get($sid) {
-        $session = $session = Session::with(['package'])->find($sid);
+        $session = $session = Session::with(['package', 'section'])->find($sid);
         $sections = [];
         foreach($session->package->sections as $section) {
             $section_temp = [
@@ -66,6 +66,10 @@ class SessionController extends Controller
             $sections[] = $section_temp;
         }
 
+        $remaining_time = null;
+        if(!$session->completed && $session->section && $session->section->time)
+            $remaining_time = $session->section->time - ($session->last_time - $session->first_time);
+
         return response()->json([
             'package' => $section->package,
             'completed' => $session->completed,
@@ -73,23 +77,34 @@ class SessionController extends Controller
             'finished_at' => $session->finished_at,
             'section_id' => $session->section_id,
             'question_id' => $session->question_id,
+            'remaining_time' => $remaining_time,
             'sections' => $sections
         ]);
     }
 
     public function navigate($sid, $nid) {
-        Session::find($sid)->update([
+        $session = Session::find($sid);
+        ResponseController::time_track($session);
+
+        $session->update([
             'section_id' => $nid,
-            'question_id' => null
+            'question_id' => null,
+            'first_time' => null,
+            'last_time' => null
         ]);
+
         return response()->json(Section::find($nid));
     }
 
     public function finish($sid) {
-        Session::find($sid)->update([
+        $session = Session::find($sid);
+        ResponseController::time_track($session);
+
+        $session->update([
             'completed' => true,
             'finished_at' => now()
         ]);
+        
         return response()->json([
             'id' => $sid
         ]);

@@ -15,7 +15,8 @@ class Response extends Model
         'question_id',
         'value',
         'flagged',
-        'score'
+        'score',
+        'duration'
     ];
 
     protected $hidden = [
