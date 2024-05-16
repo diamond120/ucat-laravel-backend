@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('responses', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('session_id')->constrained();
+            $table->foreignUuid('session_id')->constrained();
             $table->foreignId('question_id')->constrained();
             $table->string('value')->nullable();
             $table->boolean('flagged');

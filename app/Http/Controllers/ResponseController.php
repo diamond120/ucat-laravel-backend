@@ -22,7 +22,7 @@ class ResponseController extends Controller
 
         $response = Response::firstOrCreate(
             [
-                'session_id' => (int)$sid,
+                'session_id' => $sid,
                 'question_id' => (int)$qid
             ],
             [

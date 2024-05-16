@@ -9,6 +9,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Session extends Model
 {
     use HasFactory;
+    public $incrementing = false;
+    protected $keyType = 'string';
+    protected $primaryKey = 'id';
 
     public $timestamps = false;
     protected $fillable = [
@@ -23,6 +26,15 @@ class Session extends Model
         'started_at',
         'finished_at'
     ];
+
+    protected static function boot()
+    {
+        parent::boot();
+        static::creating(function ($model) {
+            if(empty($model->id))
+                $model->id = uuid_create();
+        });
+    }
 
     public function package() : BelongsTo
     {
