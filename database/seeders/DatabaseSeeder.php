@@ -75,6 +75,7 @@ class DatabaseSeeder extends Seeder
                             'type' => $question_types[$question->type],
                             'options' => json_encode($question->options),
                             'option_image_urls' => isset($question->option_images) ? json_encode($question->option_images) : null,
+                            'actions' => isset($question->actions) ? json_encode($question->actions) : null,
                             'answer' => json_encode($question->answer),
                             'explanation' => $question->explanation,
                             'situation_id' => $situation_id,

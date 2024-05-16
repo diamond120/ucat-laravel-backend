@@ -601,11 +601,11 @@
                 "If something is yellow, it is a toy"
               ],
               "answer": [
-                "N",
-                "N",
-                "Y",
-                "Y",
-                "N"
+                "No",
+                "No",
+                "Yes",
+                "Yes",
+                "No"
               ],
               "explanation": "1. We do not know that some teddies are toys, because \u2018not all\u2019 teddies could also include 0 teddies, so we don\u2019t know for sure that any teddies are definitely bears, and even then only some bears are toys. Therefore, the correct answer is NO, as the conclusion does not follow. <br\/>2. We do not know for sure if any teddies are bears, all we know is that not all teddies are bears, but there could be none. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>3. If some bears are yellow and all toys are yellow, we know some bears must be yellow too. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>4. If all dolls are toys and all toys are yellow, then all dolls must be yellow. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>5. We do not know that all yellow things are toys, only that all toys are yellow. Therefore, the correct answer is NO, as the conclusion does not follow."
             }
@@ -626,11 +626,11 @@
                 "Chickens like over-baked cakes"
               ],
               "answer": [
-                "N",
-                "Y",
-                "Y",
-                "N",
-                "N"
+                "No",
+                "Yes",
+                "Yes",
+                "No",
+                "No"
               ],
               "explanation": "1. We do not know what happens to the over-baked brownies. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. Since the over-baked cakes are either given to the chickens or put in the bin, if they are not given to the chickens they must be put in the bin. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>3. If some brownies are over-baked, then it stands that at least 1 brownie is not over-baked. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>4. Fried cakes can be originally under-baked, but we don\u2019t know that if a cake is fried it must have been under-baked. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>5. We do not know what the chickens like or prefer, only that the cake is given to them (for all we know they may not even eat it). Therefore, the correct answer is NO, as the conclusion does not follow."
             }
@@ -651,11 +651,11 @@
                 "Dancing pets may have three legs"
               ],
               "answer": [
-                "N",
-                "N",
-                "N",
-                "Y",
-                "Y"
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "Yes"
               ],
               "explanation": "1. We don\u2019t know if two-legged pets even exist, we have no information on that. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. Although Susan is a pet and can dance, and all pets with 3 legs can dance, that does not mean that all dancing pets have 3 legs. Susan may have 3 legs, but we don\u2019t know for sure based on this information. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>3. If some pets have four legs, then we know that at least 1 pet has 4 legs. The term \u2018not all\u2019 includes none\/0, therefore it is outside the scope of \u2018some\u2019 since at least 1 pet had four legs. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. Since Susan can dance and pets with 4 legs cannot dance, she cannot have 4 legs. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>5. Since all pets with 3 legs can dance, dancing pets can have 3 legs. Therefore, the correct answer is YES, as the conclusion does follow."
             }
@@ -676,11 +676,11 @@
                 "Greg, a sport teacher, is 70. He can write and swim."
               ],
               "answer": [
-                "N",
-                "Y",
-                "N",
-                "N",
-                "N"
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "No"
               ],
               "explanation": "1. Not necessarily true, as although some teachers under 50 can play the flute, we know at least 1 cannot, so Mary could be that person. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. No teachers are older than 100. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>3. All teachers can write but that doesn\u2019t mean that all writers are teachers. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. This question stem only refers to teachers, whereas this statement refers to anyone. Thus, we do not have the information to verify this. Therefore, the correct answer is NO, as the conclusion does not follow. <br\/>5. If most teachers over 70 can swim, then we know at least 1 cannot. Greg could be that person, we don\u2019t know for sure. Therefore, the correct answer is NO, as the conclusion does not follow."
             }
@@ -701,11 +701,11 @@
                 "Some roses may be around fountains in gardens."
               ],
               "answer": [
-                "N",
-                "N",
-                "N",
-                "N",
-                "Y"
+                "No",
+                "No",
+                "No",
+                "No",
+                "Yes"
               ],
               "explanation": "1. All flowers are beautiful, but since only some roses are flowers we do not know that all roses are beautiful for sure (they could be but we don\u2019t know). Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. There is no connection made between roses and the presence of a fountain. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>3. We do not know that all roses can be beautiful, so we do not know for sure whether roses near the fountain will be beautiful or not. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. All flowers are beautiful. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>5. Some roses are flowers, therefore some roses can be planted around the fountain in gardens. Therefore, the correct answer is YES, as the conclusion does follow."
             }
@@ -884,11 +884,11 @@
                 "Smokers are exposed to more health risks than non-smokers"
               ],
               "answer": [
-                "N",
-                "N",
-                "N",
-                "N",
-                "N"
+                "No",
+                "No",
+                "No",
+                "No",
+                "No"
               ],
               "explanation": "1. The reduction of oxygen in the blood and the damage to vessel walls have not been linked \u2013 rather they are presented as 2 separate effects of smoking, so we do not know if they are linked. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. Although smoking is an exacerbating factor of atherosclerosis, we do not know that it is a causing factor as well. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>3. Smoking damages blood vessel walls, but we do not know if this applies to only a certain blood vessel type. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. We do not know whether this is the case, as we only know that smokers have more heart attacks but nothing related to atherosclerosis. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>5. We know that smokers are exposed to a few health risks, but we do not know if non-smokers are exposed to less health risks for sure. Therefore, the correct answer is NO, as the conclusion does not follow."
             }
@@ -910,11 +910,11 @@
                 "Many of these deaths can be cured with proper medical practise, treatments and vaccination."
               ],
               "answer": [
-                "Y",
-                "N",
-                "N",
-                "Y",
-                "N"
+                "Yes",
+                "No",
+                "No",
+                "Yes",
+                "No"
               ],
               "explanation": "1. 11.2% + 11.2% = 22.4%, and 22.4% of 3000 is 672. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>2. 3% + 5.2% = 8.2%, and 8.2% of 3000 is 246, whereas 11.2% of 3000 is 336, which is a 90 death difference. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>3. They both have the same percentage so we know they caused the same number of deaths. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. 6.9% of 3000 = 207 deaths. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>5. We do not know whether these treatments are the cure for these ailments based on the graph. Therefore, the correct answer is NO, as the conclusion does not follow."
             }
@@ -936,11 +936,11 @@
                 "32 more students want to do Engineering and Commerce in 2006 than the number of students who wanted to do Management and Arts in 2005."
               ],
               "answer": [
-                "N",
-                "N",
-                "Y",
-                "N",
-                "N"
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "No"
               ],
               "explanation": "1. Arts 2004 = 0.11*2400 = 264. Medicine 2005 = 0.09*1900=171. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. 2006: 11% + 14% = 25%. 2005: 12% + 15% = 27%. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>3. 2006 Agriculture: 0.03*2400 = 72. 2005 Agriculture: 0.04*1900 = 76. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>4. 2006 Science: 0.25*2400 = 600. 2005 Science: 0.24*1900 = 456. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>5. Engineering + Commerce 2006 = 14% + 30% = 44%, and 0.44*2400 = 1056. Management + Arts 2005 = 8% + 12% = 20%, and 0.20*1900 = 380. Therefore, the correct answer is NO, as the conclusion does not follow."
             }
@@ -962,11 +962,11 @@
                 "The proportion of Antidepressants sold in 2011 is close to the combined proportion of Antidepressants and Sedatives in 2000. "
               ],
               "answer": [
-                "N",
-                "Y",
-                "N",
-                "N",
-                "Y"
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "Yes"
               ],
               "explanation": "1. Antidepressants increased from 54.2% to 66.9%, ADHD increased from 2.7% to 3.0%, Anxiolytics decreased from 17% to 11.4%. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. 300*0.17 = 51. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>3. We cannot calculate this as we do not know the total number of medications sold in 2000. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. We don\u2019t know the sales of Pharmacy C and cannot assume. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>5. Antidepressants in 2011 = 66.9%. Antidepressants + Sedatives in 2000 = 54.2% + 11.9% = 66.1%. They are only 0.7% apart. Therefore, the correct answer is YES, as the conclusion does follow. "
             }
@@ -988,11 +988,11 @@
                 "Spain and Italy account for approximately 1\/5 of the EU population in 2017."
               ],
               "answer": [
-                "Y",
-                "Y",
-                "N",
-                "N",
-                "N"
+                "Yes",
+                "Yes",
+                "No",
+                "No",
+                "No"
               ],
               "explanation": "1. There are 6 countries depicted + an \u2018other\u2019 category with 21 countries, so 21 + 6 = 27 countries. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>2. 550*0.166 = 91.3, and since we can\u2019t create 0.7 people, we have to round down to 91 people. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>3. It may be the smallest of the 6 on the graph, but the 21 countries in the \u2018other\u2019 category could be smaller, we don\u2019t know. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. We do not know anything about land size from this graph, and we can\u2019t make assumptions based on the population size. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>5. We do not know if this data remains true for 2017, as the graph is for 2007 only. Therefore, the correct answer is NO, as the conclusion does not follow."
             }
@@ -2513,52 +2513,27 @@
           "layout": "normal",
           "questions": [
             {
-              "text": "Complete the tasks without expressing her concerns to the supervisor",
-              "type": "Multiple Choice (SJ)",
+              "text": "Read & Mark all the actions",
+              "type": "Drag and Drop",
               "options": [
                 "Very appropriate",
                 "Appropriate but not ideal",
                 "Inappropriate but not awful",
                 "Very inappropriate"
               ],
-              "answer": "C",
+              "actions": [
+                "Complete the tasks without expressing her concerns to the supervisor",
+                "Ask about other tasks (that are clinically related) that Lauren could undertake",
+                "Ask advice from her tutor\/academic adviser",
+                "Complain directly to the faculty about the supervisor"
+              ],
+              "answer": [
+                "Complain directly to the faculty about the supervisor",
+                "Ask about other tasks (that are clinically related) that Lauren could undertake",
+                "Complete the tasks without expressing her concerns to the supervisor",
+                "Ask advice from her tutor\/academic adviser"
+              ],
               "explanation": "This response offers no direct solution to Lauren\u2019s concerns and displays a lack of willingness to communicate. It is not awful as it is not confrontational in manner and no immediately negative consequences will come about."
-            },
-            {
-              "text": "Ask about other tasks (that are clinically related) that Lauren could undertake",
-              "type": "Multiple Choice (SJ)",
-              "options": [
-                "Very appropriate",
-                "Appropriate but not ideal",
-                "Inappropriate but not awful",
-                "Very inappropriate"
-              ],
-              "answer": "B",
-              "explanation": "Although this is appropriate, it does not absolve her of the tasks she was asked to complete"
-            },
-            {
-              "text": "Ask advice from her tutor\/academic adviser",
-              "type": "Multiple Choice (SJ)",
-              "options": [
-                "Very appropriate",
-                "Appropriate but not ideal",
-                "Inappropriate but not awful",
-                "Very inappropriate"
-              ],
-              "answer": "A",
-              "explanation": "It is always a good idea to seek clarification and advice from the relevant individuals. It will also provide an outlet for Lauren to voice her concerns"
-            },
-            {
-              "text": "Complain directly to the faculty about the supervisor",
-              "type": "Multiple Choice (SJ)",
-              "options": [
-                "Very appropriate",
-                "Appropriate but not ideal",
-                "Inappropriate but not awful",
-                "Very inappropriate"
-              ],
-              "answer": "C",
-              "explanation": "It is best to resolve conflicts at a local level, by expressing the concerns to the supervisor or seeking advice first"
             },
             {
               "text": "Not attend the placement and study clinical skills at home",

@@ -2516,16 +2516,27 @@
           "layout": "normal",
           "questions": [
             {
-              "text": "Tell the patient that she believes that they have cancer",
-              "type": "Multiple Choice (SJ)",
+              "text": "Read & Mark all the actions",
+              "type": "Drag and Drop",
               "options": [
-                "Very Appropriate",
+                "Very appropriate",
                 "Appropriate but not ideal",
                 "Inappropriate but not awful",
                 "Very inappropriate"
               ],
-              "answer": "D",
-              "explanation": "Medical students do not have the capacity to make diagnoses like that and doing so may put undue stress on the patient"
+              "actions": [
+                "Complete the tasks without expressing her concerns to the supervisor",
+                "Ask about other tasks (that are clinically related) that Lauren could undertake",
+                "Ask advice from her tutor\/academic adviser",
+                "Complain directly to the faculty about the supervisor"
+              ],
+              "answer": [
+                "Complain directly to the faculty about the supervisor",
+                "Ask about other tasks (that are clinically related) that Lauren could undertake",
+                "Complete the tasks without expressing her concerns to the supervisor",
+                "Ask advice from her tutor\/academic adviser"
+              ],
+              "explanation": "This response offers no direct solution to Lauren\u2019s concerns and displays a lack of willingness to communicate. It is not awful as it is not confrontational in manner and no immediately negative consequences will come about."
             },
             {
               "text": "Apologise to the patient and inform them that Lilo performed the examination incorrectly",

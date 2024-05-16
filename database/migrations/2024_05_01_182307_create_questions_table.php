@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('type'); //MC, DD
             $table->text('options');
             $table->text('option_image_urls')->nullable();
+            $table->text('actions')->nullable();
             $table->text('answer');
             $table->text('explanation');
             $table->foreignId('situation_id')->constrained();

@@ -601,11 +601,11 @@
                 "The musicians who play the piano and are AMEB certified also have excellent violin playing skills"
               ],
               "answer": [
-                "N",
-                "N",
-                "N",
-                "N",
-                "Y"
+                "No",
+                "No",
+                "No",
+                "No",
+                "Yes"
               ],
               "explanation": "1. All musicians who are AMEB certified have excellent piano and violin playing skills, however that does not mean that everyone who has an AMEB certification has excellent piano and violin skills. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. Some = More than 1, less than All. Not All = Less than All. Therefore, according to the statement, there could be no musicians that play the guitar. However the question stem states that there are some, so at least one musician plays the guitar. Therefore, the correct answer is NO, as the conclusion does not follow. <br\/>3. This could be the case, but there is nothing in the stem to suggest that it must be or is the case. Therefore, as it falls under the \u2018can\u2019t tell\u2019 category, as we cannot be certain, the answer is NO. <br\/>4. There is nothing to suggest that a musician must be AMEB certified to play the guitar. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>5. All musicians who are AMEB certified have excellent piano and violin playing anyway, so this musician must have excellent violin skills. Therefore, the correct answer is YES, as the conclusion does follow."
             }
@@ -626,11 +626,11 @@
                 "There has not been a bigger coral bleaching event in the Great Barrier Reef since 1997"
               ],
               "answer": [
-                "N",
-                "N",
-                "N",
-                "Y",
-                "Y"
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "Yes"
               ],
               "explanation": "1. There is nothing to suggest that this event was the worst. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. We do not know if 7,000 fish is most fish or not, as we do not know the overall fish population. Therefore, the correct answer is NO, as the conclusion does not follow. <br\/>3. We do not have any information about this statement, so it would be an assumption. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. If the increase in carbon in the water led to the coral bleaching, then it is a possibility that more fish may die if it happens again. Therefore, the correct answer is YES, as the conclusion does follow. (note: this says \u2018may\u2019, not \u2018will\u2019\u2019)<br\/>5. As this event is the greatest coral bleaching event for the Great Barrier Reef, there has not been a bigger one since 1977. Therefore, the correct answer is YES, as the conclusion does follow."
             }
@@ -651,11 +651,11 @@
                 "Some valleys do not have dunes"
               ],
               "answer": [
-                "Y",
-                "Y",
-                "N",
-                "N",
-                "Y"
+                "Yes",
+                "Yes",
+                "No",
+                "No",
+                "Yes"
               ],
               "explanation": "1. A mountain is a hill and all hills have slopes and valleys, therefore a mountain will have slopes an valleys. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>2. A mountain has valleys, so if there are no dunes in the valleys then there will be waterfalls in these valleys in these mountains. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>3. All mountains are hills, but not all hills are mountains (mountains are a type of hill. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. Although mountains may have waterfalls, just because something has a waterfall doesn\u2019t mean it is a mountain (could be another type of hill). Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>5. If some valleys have dunes, then at least 1 valley does not have a dune. Therefore, the correct answer is YES, as the conclusion does follow."
             }
@@ -676,11 +676,11 @@
                 "Cat B and Cat A are different colours"
               ],
               "answer": [
-                "N",
-                "Y",
-                "Y",
-                "N",
-                "Y"
+                "No",
+                "Yes",
+                "Yes",
+                "No",
+                "Yes"
               ],
               "explanation": "1. This is an assumption \u2013 we do not know anything about cats that meow softly. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. If Cat A meows loudly, it will be black. Since it is not black, it cannot meow loudly then. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>3. Since all cats that meow loudly are black, and cat B meows loudly, it must be black. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>4. There is no information about white cats here. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>5. If Cat B meows loudly it must be black, and since Cat A is not black it must be another colour to Cat B. Therefore, the correct answer is YES, as the conclusion does follow."
             }
@@ -701,11 +701,11 @@
                 "Some male instructors are not athletes"
               ],
               "answer": [
-                "N",
-                "Y",
-                "N",
-                "N",
-                "Y"
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "Yes"
               ],
               "explanation": "1. We do not know if there are any female instructors here. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. Given that no male instructor can run a marathon, if the instructor could run a marathon they cannot be a male. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>3. We do not know anything about Tobias Swimming pool, and we do not know if this specific swimming pool is Tobias Swimming pool. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. There could be marathon runners that are instructors at the swimming pool, as they could be female, but we don\u2019t know for sure, however we can\u2019t say definitively that they are not. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>5. If some male instructors are athletes, then at least 1 male instructor is not an athlete. Therefore, the correct answer is YES, as the conclusion does follow."
             }
@@ -885,11 +885,11 @@
                 "A person with dementia will never lose consciousness"
               ],
               "answer": [
-                "N",
-                "Y",
-                "N",
-                "Y",
-                "N"
+                "No",
+                "Yes",
+                "No",
+                "Yes",
+                "No"
               ],
               "explanation": "1. Although dementia is linked to age in the passage, we don\u2019t know who is mostly affected by it. Therefore, the correct answer is NO, as the conclusion does not follow. <br\/>2. The passage states \u201cthe impairment in cognitive function is commonly accompanied\u2026 by deterioration in emotional control\u201d \u2013 unstable emotions can be inferred from a lack of emotional control. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>3. Dementia results from Alzheimer\u2019s yes, however the passages does not state that it is a certainty, as dementia \u201cresults from a variety of diseases\u201d. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. The passage states that dementia can result from injuries to the brain, Therefore, the correct answer is YES, as the conclusion does follow.<br\/>5. Although consciousness is not affected we don\u2019t know if a person with dementia will NEVER lose consciousness\/ Therefore, the correct answer is NO, as the conclusion does not follow. "
             }
@@ -911,11 +911,11 @@
                 "In May, the energy usage for both 2008 and 2009 was approximately similar in the Watt household."
               ],
               "answer": [
-                "N",
-                "Y",
-                "N",
-                "N",
-                "Y"
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "Yes"
               ],
               "explanation": "1. January had the highest energy usage in 2008\/9. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. On observation, the dark blue representing 2008 is greater than the lighter blue representing 2009. It is close to around 200 kilowatt-hours\/month higher. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>3. They used 550 kilowatt-hours in April 2008, not 450, therefore the total should be $27,500, not $22,500. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. There is no indication about a relative. Therefore, the answer is NO as it is an assumption.<br\/>5. The values for 2008 and 2009 are roughly 50 kilowatt-hours apart, so it can be deemed as approximately similar. Therefore, the correct answer is YES, as the conclusion does follow. "
             }
@@ -937,11 +937,11 @@
                 "Emily\u2019s number of coughs in the one week in 2016 is approximately 10% of her number of sneezes in one week in 2016."
               ],
               "answer": [
-                "N",
-                "Y",
-                "N",
-                "N",
-                "Y"
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "Yes"
               ],
               "explanation": "1. We have no information about a sandstorm, so this would be an assumption. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. 50\/7 days = roughly 7 coughs a day. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>3. The sneezing data collected in 2014, 15 and 17 is more than that collected in 2016. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. We don\u2019t know this for sure so this would be an extrapolation and assumption beyond the graph. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>5. 10\/100 = 10%. Therefore, the correct answer is YES, as the conclusion does follow."
             }
@@ -963,11 +963,11 @@
                 "The Abbasid caliphate and Second French colonial empire combines covered approximately the same total area as the Russian empire.\u2003"
               ],
               "answer": [
-                "Y",
-                "N",
-                "Y",
-                "N",
-                "Y"
+                "Yes",
+                "No",
+                "Yes",
+                "No",
+                "Yes"
               ],
               "explanation": "1. The area occupied by those 3 empires is 35.1 million km2 and the British empire has 35.5 million km2. Therefore, the correct answer is YES, as the conclusion does follow. <br\/>2. We have no information about the distribution of the population and the population in 1790 either. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>3. If 0.238*x = 35.5 (British Empire), therefore x=149. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>4. It is the equal newest empire, the third oldest empire is the Mongol Empire. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>5. Those two empires had about 22.6 million km2, whereas the Russian empire has 22.9 million km2. Therefore, the correct answer is YES, as the conclusion does follow."
             }
@@ -989,11 +989,11 @@
                 "The median number of beds in General hospitals in the United Kingdom in 2019 was 32"
               ],
               "answer": [
-                "N",
-                "Y",
-                "Y",
-                "Y",
-                "N"
+                "No",
+                "Yes",
+                "Yes",
+                "Yes",
+                "No"
               ],
               "explanation": "1. It has decreased by 7 beds. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. 29*2=58, and 58<62. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>3. 162\/2=81, and 81>67 (2018). 136\/2=68, and 68>45 (2019). Therefore, the correct answer is YES, as the conclusion does follow.<br\/>4. They have decreased from 59 to 38. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>5. This data is for the US, not United Kingdom. Therefore, the correct answer is NO, as the conclusion does not follow."
             }
@@ -2519,16 +2519,27 @@
           "layout": "normal",
           "questions": [
             {
-              "text": "Tell Jack that he got a strict assessor and was just unlucky",
-              "type": "Multiple Choice (SJ)",
+              "text": "Read & Mark all the actions",
+              "type": "Drag and Drop",
               "options": [
-                "Very Appropriate",
+                "Very appropriate",
                 "Appropriate but not ideal",
                 "Inappropriate but not awful",
                 "Very inappropriate"
               ],
-              "answer": "C",
-              "explanation": "It is important to remind Jack that negative feedback is important to drive improvement and simply blaming the assessor is not the correct way to go about it. However, this response may comfort Jack and doesn\u2019t have any disastrous impacts"
+              "actions": [
+                "Complete the tasks without expressing her concerns to the supervisor",
+                "Ask about other tasks (that are clinically related) that Lauren could undertake",
+                "Ask advice from her tutor\/academic adviser",
+                "Complain directly to the faculty about the supervisor"
+              ],
+              "answer": [
+                "Complain directly to the faculty about the supervisor",
+                "Ask about other tasks (that are clinically related) that Lauren could undertake",
+                "Complete the tasks without expressing her concerns to the supervisor",
+                "Ask advice from her tutor\/academic adviser"
+              ],
+              "explanation": "This response offers no direct solution to Lauren\u2019s concerns and displays a lack of willingness to communicate. It is not awful as it is not confrontational in manner and no immediately negative consequences will come about."
             },
             {
               "text": "Tell Jack that results will balance out over time",

@@ -601,11 +601,11 @@
                 "Most laptops are touchscreen"
               ],
               "answer": [
-                "N",
-                "N",
-                "Y",
-                "Y",
-                "N"
+                "No",
+                "No",
+                "Yes",
+                "Yes",
+                "No"
               ],
               "explanation": "1. We do not know that a laptop that can fold in half is definitely touchscreen (\u2018not all\u2019 only means not 100%, but it also includes 0\/none). Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. We don\u2019t have any information about phones folding in half. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>3. Since all phones are touchscreen, one that can fold in half will also be touchscreen. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>4. \u2018Not all\u2019 implies that at least 1 laptop that can fold in half is not touchscreen. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>5. We don\u2019t even know if one laptop that can fold in half is touchscreen for sure. Therefore, the correct answer is NO, as the conclusion does not follow."
             }
@@ -626,11 +626,11 @@
                 "Some Paps that are Peps could be Pops"
               ],
               "answer": [
-                "N",
-                "N",
-                "N",
-                "N",
-                "Y"
+                "No",
+                "No",
+                "No",
+                "No",
+                "Yes"
               ],
               "explanation": "1. If all Pips are Pups, then we know at least some Pups are Pips too, which means these Pups cannot be Pops. But the trail stops there and we do not know for sure whether these Pups or Pups in general are Peps. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. We do not know the proportion of Paps that are Peps \u2013 only that some Paps are Peps (there could only be 1 Pap that is a Pep). Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>3. There is nothing to suggest that all Pups cannot be Paps. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. If all Pips are Pups, then we know at least some Pups are Pips too, which means these Pups cannot be Pops, however we do not know about the Pups that are not Pips. Therefore, the correct answer is NO, as the conclusion does not follow. <br\/>5. Since most Pops are Peps, the Paps that are Peps COULD be Pops (but we don\u2019t know for certain). Since the statement is phrased like \u2018these particular Paps COULD be Pops\u2019, the correct answer is YES."
             }
@@ -651,11 +651,11 @@
                 "A snake could eat an insect"
               ],
               "answer": [
-                "N",
-                "N",
-                "N",
-                "Y",
-                "N"
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "No"
               ],
               "explanation": "1. It could have eaten a fish. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. All we know is that it can\u2019t be eaten by a snake, but we don\u2019t know if anything else eats the fish. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>3. The snakes could still eat the frogs, but all this means is that snakes will always be able to eat the fish since they can\u2019t eat insects. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. Since the snakes only eat frogs and fish and will die if they do not eat, the snakes will die if the frogs and fish disappear. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>5. A snake can only eat frogs and fish. Therefore, the correct answer is NO, as the conclusion does not follow."
             }
@@ -676,11 +676,11 @@
                 "A clown who is a dancer must be bald"
               ],
               "answer": [
-                "Y",
-                "N",
-                "N",
-                "N",
-                "N"
+                "Yes",
+                "No",
+                "No",
+                "No",
+                "No"
               ],
               "explanation": "1. Some acrobats are clowns (as all clowns are acrobats), and all acrobats are bald. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>2. We don\u2019t know if clowns are dancers for sure. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>3. Just because some dancers are bald does not mean that some have to be acrobats. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. All clowns who are acrobats must be bald as all acrobats are bald. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>5. Since all clowns are acrobats and all acrobats must be bald, the clown must be bald anyway. Therefore, the correct answer is YES, as the conclusion does follow."
             }
@@ -701,11 +701,11 @@
                 "This object could be found outside"
               ],
               "answer": [
-                "N",
-                "N",
-                "N",
-                "N",
-                "Y"
+                "No",
+                "No",
+                "No",
+                "No",
+                "Yes"
               ],
               "explanation": "1. Only some green things are found outside, so we cannot be certain that this object was found outside. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. Only some green things are found outside, so we cannot say that all objects that are green must be found outside. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>3. We do not know whether this is true as all we know is that this one object is green. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. We don\u2019t know that all the objects found outside are green. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>5. Given that this object is green and some green things are found outside, this object COULD be found outside. Therefore, the correct answer is YES, as the conclusion does follow."
             }
@@ -884,11 +884,11 @@
                 "Next year, sales are likely to go up again as well"
               ],
               "answer": [
-                "N",
-                "N",
-                "Y",
-                "N",
-                "N"
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "No"
               ],
               "explanation": "1. We don\u2019t know what classified as \u2018good\u2019 for the sales at this bar. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. At this particular bar Duff Original has more sales, but that doesn\u2019t mean it is more popular in general than Bud Light. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>3. The total revenue earned at this bar from Duff Original is 280,000*5.50 = 1,540,000. If the costs were 1,000,000, then the remaining profit is 540,000 dollars. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>4. The bar sells 7 types of beers + the \u2018other\u2019 category, and we don\u2019t know how many beers fall under that. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>5. We don\u2019t know what is going to happen next year, this would be predicting which we cannot do from the information in this graph. Therefore, the correct answer is NO, as the conclusion does not follow."
             }
@@ -909,11 +909,11 @@
                 "Cellular repair mechanisms tend to become less useful as a person ages"
               ],
               "answer": [
-                "Y",
-                "Y",
-                "N",
-                "Y",
-                "N"
+                "Yes",
+                "Yes",
+                "No",
+                "Yes",
+                "No"
               ],
               "explanation": "1. If cancer is the second leading cause of death and is responsible for 9.6 million deaths in 2018, the leading cause of death must have been responsible for more deaths. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>2. If 9.6 million people died from cancer in 2018 and 1\/6 deaths are due to cancer, then 9.6 million * 6 = 57.6 million people died in the world in 2018. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>3. 0.70 * 9.6 million = 6.72 million people. However, 70% represents low and middle income countries, so we can\u2019t say that all these deaths were just from low income countries. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. Since the \u201cincidence of cancer rises dramatically with age\u201d, we can infer that an older person is more likely in general to get cancer than a child. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>5. Since \u201cthe overall risk accumulation is combined with the tendency for cellular repair mechanisms to be less effective as a person grows older\u201d, we can infer that they are not as useful (less effective) as a person ages. Therefore, the correct answer is YES, as the conclusion does follow."
             }
@@ -935,11 +935,11 @@
                 "16 more students liked Action movies over Drama movies"
               ],
               "answer": [
-                "Y",
-                "N",
-                "Y",
-                "N",
-                "Y"
+                "Yes",
+                "No",
+                "Yes",
+                "No",
+                "Yes"
               ],
               "explanation": "1. Romance + Drama = 14% + 14% = 28%, which is more than a quarter (25%). Therefore, the correct answer is YES, as the conclusion does follow.<br\/>2. That is making an assumption that just because it is the most popular choice, it will get chosen at the next movie night. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>3. 18% prefer action whereas 11% prefer horror. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>4. Science fiction + Drama + Foreign = 30%, Comedy = 27%. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>5. 18% - 14% = 4%. 4% of 400 students is 16. Therefore, the correct answer is YES, as the conclusion does follow."
             }
@@ -961,11 +961,11 @@
                 "Tea is the only condiment that required more money in 2019 than the money allocated for it."
               ],
               "answer": [
-                "Y",
-                "N",
-                "Y",
-                "Y",
-                "N"
+                "Yes",
+                "No",
+                "Yes",
+                "Yes",
+                "No"
               ],
               "explanation": "1. The Actual bar is higher in total than the Budget bar for Coffee (both quarters as this is for the whole year of 2019). Therefore, the correct answer is YES, as the conclusion does follow.<br\/>2. The budget for milk for the whole year is greater than what was spent. Furthermore, we do not know if the company will even buy milk in 2020 for example, as this would be making a judgement beyond the data in the graph. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>3. $4000 was spent on coffee in 2019, which means 1000 packets of coffee were bought for $4 each. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>4. The Actual bar for coffee (whole year) is higher than the other 2 drinks by observation. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>5. Coffee also required more money than was allocated. Therefore, the correct answer is NO, as the conclusion does not follow."
             }
@@ -987,11 +987,11 @@
                 "David Fincher and Curtis Hanson have collaborated on several projects, as seen by their similar award achievements."
               ],
               "answer": [
-                "N",
-                "Y",
-                "N",
-                "Y",
-                "N"
+                "No",
+                "Yes",
+                "No",
+                "Yes",
+                "No"
               ],
               "explanation": "1. Given that some directors chose not to respond, we don\u2019t know for sure whether Steven Spielberg has won award in more genres than any other director. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>2. Ethan\/Joel Coen, Lee Unkrich and Steven Spielberg have won more than 300 awards each. Therefore, the correct answer is YES, as the conclusion does follow. <br\/>3. Ang Lee has won 200 awards, so 200*20 = $4000, not $40,000. Therefore, the correct answer is NO, as the conclusion does not follow.<br\/>4. He has won about 100 comedy awards, and the only other surveyed director to have won a comedy award or come close is Roberto Benigni with less than 100, maybe 50. Therefore, the correct answer is YES, as the conclusion does follow.<br\/>5. We cannot tell what awards correlate to which projects, so this would be an assumption. Therefore, the correct answer is NO, as the conclusion does not follow."
             }
@@ -2516,16 +2516,27 @@
           "layout": "normal",
           "questions": [
             {
-              "text": "Immediately apologise to James on behalf of Janette",
-              "type": "Multiple Choice (SJ)",
+              "text": "Read & Mark all the actions",
+              "type": "Drag and Drop",
               "options": [
-                "Very Appropriate",
+                "Very appropriate",
                 "Appropriate but not ideal",
                 "Inappropriate but not awful",
                 "Very inappropriate"
               ],
-              "answer": "B",
-              "explanation": "Having noticed that James is upset, Chris may feel compelled to apologise. While this may help comfort James, Chris is not the one who made the comment and, instead, Janette should be encouraged to apologise"
+              "actions": [
+                "Complete the tasks without expressing her concerns to the supervisor",
+                "Ask about other tasks (that are clinically related) that Lauren could undertake",
+                "Ask advice from her tutor\/academic adviser",
+                "Complain directly to the faculty about the supervisor"
+              ],
+              "answer": [
+                "Complain directly to the faculty about the supervisor",
+                "Ask about other tasks (that are clinically related) that Lauren could undertake",
+                "Complete the tasks without expressing her concerns to the supervisor",
+                "Ask advice from her tutor\/academic adviser"
+              ],
+              "explanation": "This response offers no direct solution to Lauren\u2019s concerns and displays a lack of willingness to communicate. It is not awful as it is not confrontational in manner and no immediately negative consequences will come about."
             },
             {
               "text": "Later, speak to Janette privately about how her comment appeared to offend James",
