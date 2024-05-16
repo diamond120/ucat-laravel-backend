@@ -30,6 +30,7 @@ Route::group(['middleware' => 'api', 'prefix' => 'auth'], function ($router) {
 Route::get('/packages', [PackageController::class, 'list']);
 
 Route::post('/sessions', [SessionController::class, 'create']);
+Route::get('/sessions', [SessionController::class, 'list']);
 Route::get('/sessions/{sid}', [SessionController::class, 'get']);
 Route::put('/sessions/{sid}/sections/{nid}', [SessionController::class, 'navigate']);
 Route::put('/sessions/{sid}', [SessionController::class, 'finish']);
