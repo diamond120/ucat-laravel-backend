@@ -13,11 +13,13 @@ use App\Models\Section;
 class SessionController extends Controller
 {
     public function list(Request $request) {
-        return response()->json(Session::where([
-            "user_id" => 1
-        ])->get());
+        return response()->json(
+            Session::with(["package"])->where([
+                "user_id" => 1
+            ])->get()
+        );
     }
-    
+
     public function create(Request $request) {
         $package = Package::find($request->package_id);
         $section = $package->sections()->first();
