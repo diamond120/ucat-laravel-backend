@@ -44,6 +44,11 @@ class SessionController extends Controller
                 'time' => $section->time,
                 'questions' => []
             ];
+            if($session->completed) {
+                $section_temp['partially_correct'] = 0;
+                $section_temp['correct'] = 0;
+            }
+
             foreach($section->questions as $question) {
                 $response = Response::where(
                     [
@@ -56,11 +61,28 @@ class SessionController extends Controller
                     ? $response->value ? 'Completed' : 'InComplete'
                     : 'UnSeen';
 
-                $section_temp['questions'][] = [
-                    'id' => $question->id, 
-                    'status' => $status,
-                    'flagged' => $response->flagged ?? false,
-                ];
+                if($session->completed) {
+                    $section_temp['questions'][] = [
+                        'id' => $question->id,
+                        'score' => $response->score ?? 0,
+                        'duration' => $response->duration ?? 0,
+                    ];
+                    switch($response->score ?? 0) {
+                        case 1:
+                        case 3:
+                            $section_temp['correct'] += 1;
+                            break;
+                        case 2:
+                            $section_temp['partially_correct'] += 1;
+                            break;
+                    }
+                } else {
+                    $section_temp['questions'][] = [
+                        'id' => $question->id,
+                        'status' => $status,
+                        'flagged' => $response->flagged ?? false,
+                    ];
+                }
             }
 
             $sections[] = $section_temp;
@@ -68,7 +90,9 @@ class SessionController extends Controller
 
         $remaining_time = null;
         if(!$session->completed && $session->section && $session->section->time)
-            $remaining_time = $session->section->time - ($session->last_time - $session->first_time);
+            $remaining_time = $session->section->time - ($session->first_time ? time() - $session->first_time : 0);
+        if($remaining_time < 0)
+            $remaining_time = 0;
 
         return response()->json([
             'package' => $section->package,
@@ -102,7 +126,11 @@ class SessionController extends Controller
 
         $session->update([
             'completed' => true,
-            'finished_at' => now()
+            'finished_at' => now(),
+            'section_id' => null,
+            'question_id' => null,
+            'first_time' => null,
+            'last_time' => null
         ]);
         
         return response()->json([

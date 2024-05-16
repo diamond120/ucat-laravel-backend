@@ -49,7 +49,7 @@ class ResponseController extends Controller
             $response->update([
                 'value' => $request->value ?? null,
                 'flagged' => $request->flagged,
-                'score' => null
+                'score' => rand(0, 3) //0 incorrect 1 correct 2 partially correct 3 fully correct
             ]);
         }
 
