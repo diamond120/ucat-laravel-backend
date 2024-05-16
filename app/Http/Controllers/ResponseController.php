@@ -40,16 +40,34 @@ class ResponseController extends Controller
     public function write($sid, $qid, Request $request) {
         ResponseController::time_track(Session::find($sid));
 
-        $response = Response::where([
+        $response = Response::with(['question'])->where([
             'session_id' => $sid,
             'question_id' => $qid
         ])->first();
 
         if($response) {
+            $score = 0;
+            switch($response->question->type){
+            case 'MC':
+                if($response->question->answer == $request->value)
+                    $score = 1;
+                break;
+            case 'DD':
+                $values = json_decode($request->value);
+                $answers = json_decode($response->question->answer);
+                $score = 2;
+                for($i = 0; $i < count($values); $i++) {
+                    if($values[$i] != $answers[$i])
+                        $score--;
+                }
+                if($score < 0) $score = 0;
+                break;
+            }
+
             $response->update([
                 'value' => $request->value ?? null,
                 'flagged' => $request->flagged,
-                'score' => rand(0, 3) //0 incorrect 1 correct 2 partially correct 3 fully correct
+                'score' => $score
             ]);
         }
 
