@@ -61,7 +61,7 @@ class SessionController extends Controller
             foreach($section->questions as $question) {
                 $response = Response::where(
                     [
-                        'session_id' => (int)$sid,
+                        'session_id' => $sid,
                         'question_id' => (int)$question->id,
                     ],
                 )->first();
