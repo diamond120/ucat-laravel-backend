@@ -16,7 +16,8 @@ class Session extends Model
     public $timestamps = false;
     protected $fillable = [
         'package_id', 
-        'user_id', 
+        'user_id',
+        'redirect_url',
         'completed', 
         'score', 
         'section_id', 

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->uuid('id')->primary();
             $table->foreignId('package_id')->constrained();
             $table->integer('user_id');
+            $table->string('redirect_url')->nullable();
             $table->boolean('completed');
             $table->double('score')->nullable();
             $table->foreignId('section_id')->nullable()->constrained();

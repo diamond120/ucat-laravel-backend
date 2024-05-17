@@ -28,6 +28,7 @@ class SessionController extends Controller
         $session = Session::create([
             'package_id' => $package->id,
             'user_id' => $request->user_id,
+            'redirect_url' => $request->redirect_url ?? null,
             'completed' => false,
             'score' => null,
             'section_id' => null,
@@ -105,6 +106,7 @@ class SessionController extends Controller
         return response()->json([
             'package' => $section->package,
             'completed' => $session->completed,
+            'redirect_url' => $session->redirect_url,
             'started_at' => $session->started_at,
             'finished_at' => $session->finished_at,
             'section_id' => $session->section_id,
