@@ -22,6 +22,12 @@ class SessionController extends Controller
 
     public function create(Request $request) {
         $package = Package::find($request->package_id);
+        if($package->code != $request->exam_code) {
+            return response()->json([
+                'err' => 'Exam code does not match!'
+            ]);
+        }
+
         $section = $package->sections()->first();
         $question = $section->questions()->first();
 

@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('sessions', function (Blueprint $table) {
-            $table->uuid('id')->primary();
+            $table->id('key');
+            $table->uuid('id')->unique();
             $table->foreignId('package_id')->constrained();
             $table->integer('user_id');
             $table->string('redirect_url')->nullable();

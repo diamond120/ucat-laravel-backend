@@ -43,6 +43,7 @@ class DatabaseSeeder extends Seeder
             $package_id = DB::table('packages')->insertGetId([
                 'name' => $package->name,
                 'type' => $package->type,
+                'code' => '1234',
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
