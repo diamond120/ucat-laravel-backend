@@ -28,12 +28,10 @@ class SessionController extends Controller
             ]);
         }
 
-        $section = $package->sections()->first();
-        $question = $section->questions()->first();
-
-        $session = Session::create([
+        $session = Session::updateOrCreate([
             'package_id' => $package->id,
-            'user_id' => $request->user_id,
+            'user_id' => $request->user_id
+        ], [
             'redirect_url' => $request->redirect_url ?? null,
             'completed' => false,
             'score' => null,
@@ -42,6 +40,8 @@ class SessionController extends Controller
             'started_at' => now(),
             'finished_at' => null
         ]);
+
+        Response::where('session_id', $session->id)->delete();
 
         return response()->json([
             'id' => $session->id
