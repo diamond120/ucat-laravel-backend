@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('sessions', function (Blueprint $table) {
-            $table->id('key');
+            $table->id('key')->autoIncrement();
             $table->uuid('id')->unique();
             $table->foreignId('package_id')->constrained();
             $table->integer('user_id');
