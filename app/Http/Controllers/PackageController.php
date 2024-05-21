@@ -20,9 +20,16 @@ class PackageController extends Controller
     }
 
     public function get($pid) {
-        return response()->json(Session::where([
-            'package_id' => $pid,
-            'completed' => true
-        ])->pluck('scores'));
+        return response()->json([
+            'scores' => Session::where([
+                'package_id' => $pid,
+                'completed' => true
+            ])->pluck('scores'),
+            'mine' => Session::where([
+                'package_id' => $pid,
+                'completed' => true,
+                'user_id' => 1
+            ])->pluck('scores')
+        ]);
     }
 }
