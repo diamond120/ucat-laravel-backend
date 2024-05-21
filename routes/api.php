@@ -28,6 +28,7 @@ Route::group(['middleware' => 'api', 'prefix' => 'auth'], function ($router) {
 });
 
 Route::get('/packages', [PackageController::class, 'list']);
+Route::get('/packages/{pid}', [PackageController::class, 'get']);
 
 Route::post('/sessions', [SessionController::class, 'create']);
 Route::get('/sessions', [SessionController::class, 'list']);

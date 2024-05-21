@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('user_id');
             $table->string('redirect_url')->nullable();
             $table->boolean('completed');
-            $table->double('score')->nullable();
+            $table->string('scores')->nullable();
             $table->foreignId('section_id')->nullable()->constrained();
             $table->foreignId('question_id')->nullable()->constrained();
             $table->integer('first_time')->nullable();

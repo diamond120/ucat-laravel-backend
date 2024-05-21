@@ -15,14 +15,17 @@ class ResponseController extends Controller
         $session = Session::find($sid);
         ResponseController::time_track($session);
 
+        $section_id = Question::find($qid)->section_id;
+
         $session->update([
-            'section_id' => Question::find($qid)->section_id,
+            'section_id' => $section_id,
             'question_id' => $qid,
         ]);
 
         $response = Response::firstOrCreate(
             [
                 'session_id' => $sid,
+                'section_id' => $section_id,
                 'question_id' => (int)$qid
             ],
             [

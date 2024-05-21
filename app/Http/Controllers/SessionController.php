@@ -9,6 +9,7 @@ use App\Models\Package;
 use App\Models\Session;
 use App\Models\Response;
 use App\Models\Section;
+use Illuminate\Support\Facades\Log;
 
 class SessionController extends Controller
 {
@@ -49,7 +50,7 @@ class SessionController extends Controller
     }
 
     public function get($sid) {
-        $session = $session = Session::with(['package', 'section'])->find($sid);
+        $session = $session = Session::find($sid);
         $sections = [];
         foreach($session->package->sections as $section) {
             $section_temp = [
@@ -140,8 +141,17 @@ class SessionController extends Controller
         $session = Session::find($sid);
         ResponseController::time_track($session);
 
+        $scores = [];
+        foreach($session->package->sections as $section) {
+            $scores[] = Response::where([
+                'session_id' => $sid,
+                'section_id' => $section->id
+            ])->sum('score');
+        }
+
         $session->update([
             'completed' => true,
+            'scores' => json_encode($scores),
             'finished_at' => now(),
             'section_id' => null,
             'question_id' => null,

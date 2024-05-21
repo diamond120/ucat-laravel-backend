@@ -11,7 +11,8 @@ class Response extends Model
     use HasFactory;
 
     protected $fillable = [
-        'session_id', 
+        'session_id',
+        'section_id',
         'question_id',
         'value',
         'flagged',

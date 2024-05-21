@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('responses', function (Blueprint $table) {
             $table->id();
             $table->foreignUuid('session_id');
+            $table->foreignId('section_id')->constrained();
             $table->foreignId('question_id')->constrained();
             $table->string('value')->nullable();
             $table->boolean('flagged');

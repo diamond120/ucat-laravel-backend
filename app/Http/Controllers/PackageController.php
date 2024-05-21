@@ -16,6 +16,13 @@ class PackageController extends Controller
         return response()->json(Package::whereNotIn(
             'id',
             Session::where('user_id', 1)->pluck('package_id')
-        )->get());        
+        )->get());
+    }
+
+    public function get($pid) {
+        return response()->json(Session::where([
+            'package_id' => $pid,
+            'completed' => true
+        ])->pluck('scores'));
     }
 }

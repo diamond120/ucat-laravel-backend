@@ -19,7 +19,7 @@ class Session extends Model
         'user_id',
         'redirect_url',
         'completed', 
-        'score', 
+        'scores', 
         'section_id', 
         'question_id',
         'first_time',
