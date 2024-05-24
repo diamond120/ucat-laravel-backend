@@ -81,15 +81,18 @@ class SessionController extends Controller
                     $section_temp['questions'][] = [
                         'id' => $question->id,
                         'score' => $response->score ?? 0,
+                        'type' => $question->type,
                         'duration' => $response->duration ?? 0,
                     ];
                     switch($response->score ?? 0) {
                         case 1:
-                        case 3:
-                            $section_temp['correct'] += 1;
+                            if($question->type == 'MC')
+                                $section_temp['correct'] += 1;
+                            else
+                                $section_temp['partially_correct'] += 1;
                             break;
                         case 2:
-                            $section_temp['partially_correct'] += 1;
+                            $section_temp['correct'] += 1;
                             break;
                     }
                 } else {
