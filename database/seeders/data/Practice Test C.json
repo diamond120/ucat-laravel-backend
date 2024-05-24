@@ -1,6 +1,7 @@
 {
   "name": "Practice Test C",
   "type": "Practice Test",
+  "code": "code-c",
   "sections": [
     {
       "name": "Verbal Reasoning",

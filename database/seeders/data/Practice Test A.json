@@ -1,6 +1,7 @@
 {
   "name": "Practice Test A",
   "type": "Practice Test",
+  "code": "code-a",
   "sections": [
     {
       "name": "Verbal Reasoning",
